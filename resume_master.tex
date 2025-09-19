@@ -1,0 +1,212 @@
+%-------------------------
+% Resume in Latex
+% Author : Laasya Aki
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingOneLine}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Laasya Aki}
+ 
+\end{center}
+
+\begin{center}
+\href{mailto:laki@andrew.cmu.edu}{laki@andrew.cmu.edu} $|$
+\small 612-417-5749 $|$
+\href{https://www.linkedin.com/in/laasyaaki}{https://www.linkedin.com/in/laasyaaki} $|$
+\href{http://laasyaaki.github.io}{http://laasyaaki.github.io}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Carnegie Mellon University}{May 2028}
+        {Bachelor of Science in Computer Science, Concentration in Machine Learning}{GPA: 3.3}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: Data Structures and Algorithms, Computer Systems, Functional Programming, Human-Computer Interaction, Intro to Robotics, Discrete Math, AI/Cybersecurity Independent Study}
+     \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------Extracurriculars-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Dispatch}{May 2025 - Aug. 2025}
+      {QA Automation Engineering Intern}{}
+      \resumeItemListStart
+        \resumeItem{Migrated mobile test suite from \textbf{Appium} to \textbf{Maestro Cloud} (\textbf{YAML}, \textbf{Ruby}, \textbf{JavaScript}, \textbf{AWS}), improving test reliability and reducing regression testing time by \textbf{40 hours} per 3-week sprint.}
+        \resumeItem{Developed scalable, automated web test suites (\textbf{Playwright}, \textbf{Pytest}, \textbf{Python}), increasing coverage by \textbf{25\%}.}
+        \resumeItem{Trained and deployed an \textbf{AI Agent} to convert legacy automation suites from \textbf{Selenium} to \textbf{Playwright}, automating the migration of \textbf{200+} test cases.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Carnegie Mellon University}{Sept. 2024 - present}
+      {AI and Cybersecurity Research Assistant, Software and Societal Systems Department}{}
+      \resumeItemListStart
+        \resumeItem{Constructing a \textbf{knowledge graph} of cyber defense playbooks (\textbf{Python}, \textbf{LLMs}, \textbf{RAG}, \textbf{MITRE D3FEND}) to map cyber defense techniques, enhancing automated threat response capabilities for an \textbf{NSA-funded project}.}
+        \resumeItem{Designing a \textbf{dual-agent AI system} to autonomously test and validate the effectiveness of LLM-generated defense playbooks against simulated cyberattacks.}
+        \resumeItem{Implementing a \textbf{rank-ordering algorithm} to evaluate defense playbook effectiveness in real-time, enabling adaptive response strategies based on situational threat analysis.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {General Mills}{June 2024 - Aug. 2024}
+      {Digital \& Industrial Innovation IoT Intern}{}
+      \resumeItemListStart
+        \resumeItem{Prototyped \textbf{Industrial IoT (IIoT)} devices and platforms to create a scalable blueprint for integration into General Mills' future smart factory initiatives. }
+        \resumeItem{Deployed and containerized applications with \textbf{Docker} to manage IIoT hardware.}
+        \resumeItem{Designed interactive \textbf{Grafana dashboards} to interpret sensor data, providing key data-driven insights.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Minnesota Twins}{May 2023 - Aug. 2023}
+      {App Development Intern}{}
+      \resumeItemListStart
+        \resumeItem{Developed a full-stack web app (\textbf{React}, \textbf{TypeScript}, \textbf{Prisma}, \textbf{GCP}, \textbf{Tailwind CSS}) with \textbf{CRUD} functionality, saving sales executives \textbf{3 hours per week} by automating ticket assignments.}
+        \resumeItem{Engineered \textbf{GraphQL endpoints} for employee and ticket data \textbf{APIs}, improving response times for over \textbf{10} apps.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS & LEADERSHIP-----------
+\section{Projects and Leadership}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://cmueats.com}{CMUEats.com}}{May 2025 - present}
+      {Tech Lead, CMU ScottyLabs}{}
+      \resumeItemListStart
+        \resumeItem{Leading 5-person development team for CMUEats.com (\textbf{React}, \textbf{Typescript}, \textbf{Vite}, \textbf{Elysia}), a web platform serving over \textbf{5,000 weekly users} at Carnegie Mellon.}
+        \resumeItem{Collaborating with CMU Dining Services to ideate and develop new features, such as pinned locations and a sponsor carousel, to directly enhance user engagement.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {AgrID}{Jan 2023 - April 2023}
+      {TechnovationMN Winner}{}
+      \resumeItemListStart
+        \resumeItem{Led 3-person team to develop a mobile app (\textbf{React Native}, \textbf{Firebase}, \textbf{Teachable Machine}) that identifies diseased crops using an \textbf{image classification ML model}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Languages}{: Python, TypeScript/JavaScript, Java, C, Ruby, SQL, HTML/CSS, SML, x86-64 Assembly} \\
+      \vspace{1mm}
+      \textbf{Frameworks \& Libraries}{: React/React Native, Playwright, NodeJS, Pytest, Prisma, Tailwind CSS, Appium, Selenium} \\
+      \vspace{1mm}
+      \textbf{Tools \& Technologies}{: Git, Docker, AWS, GCP, PostgreSQL, GraphQL, REST APIs, CI/CD, Maestro Cloud, Jira, Figma, LLMs, RAG, Prompt Engineering, Firebase}
+    }}
+ \end{itemize}
+
+
+\end{document}
